@@ -1,0 +1,576 @@
+html,
+body{
+    height: 100%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: #dee7ee;
+}
+
+p {
+    font-family: 'Conv_segoeui', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.btn-nav {
+    min-width: 25px !important;
+    padding: 0px;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background: url(../images/menu.png) no-repeat;
+    margin-top: 5px;
+    background-size: contain;
+}
+
+.form-group {
+    margin-bottom: 1.4rem;
+}
+
+#sidebar {
+    width: 250px;
+    background: #fff;
+    /* min-height: 91.8vh;*/
+    transition: all 0.3s;
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+}
+
+#sidebar ul.components {
+    padding: 0px 0;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 20px 15px;
+    font-size: 1.1em;
+    display: block;
+    font-size: 14px;
+    color: #495055;
+    border-bottom: 1px solid #e5e5e5;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#sidebar ul li a .navIcon {
+    margin-right: 20px;
+}
+
+#sidebar ul li a:hover {
+    color: #495055;
+    text-decoration: none;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #005694;
+    background: #f7f7f7;
+    text-decoration: none;
+}
+
+#sidebar.active {
+    width: 250px;
+}
+
+#sidebar ul li ul {
+    min-height: 100px;
+    max-height: 250px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.bg-white {
+    background: white;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+#content {
+    width: 100%;
+    padding: 10px;
+    margin-left: 250px;
+    transition: all 0.3s;
+}
+
+#content.active {
+    margin-left: 250px;
+}
+
+.conten-pd {
+    padding-bottom: 15px;
+}
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.bg-blue {
+    background-color: #003b5b;
+    height: 60px;
+}
+
+.logo {
+    margin-left: 10px;
+}
+
+label {
+    font-size: 12.5px;
+    color: rgb(147, 139, 164);
+    line-height: 1.2;
+    margin-bottom: 0px;
+}
+
+.form-control {
+    outline: none;
+    box-shadow: none !important;
+    border-color: rgba(112, 104, 129, 0.25);
+}
+
+.style-input {
+    background: transparent;
+    border: transparent;
+    border-bottom: 1px solid rgba(112, 104, 129, 0.25);
+    border-radius: 0px;
+    font-size: 18px;
+    color: rgb(97, 90, 112);
+    line-height: 1.2;
+    padding-left: 0px;
+    padding-top: 0;
+}
+
+.style-select {}
+
+.style-select .form-control {
+    background: transparent;
+    border: transparent;
+    border-bottom: 1px solid rgba(112, 104, 129, 0.25);
+    border-radius: 0px;
+    font-size: 18px;
+    color: rgb(97, 90, 112);
+    line-height: 1.2;
+    padding-left: 0px;
+    height: 28px !important;
+    padding-top: 0;
+    padding-bottom: 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    background: url(../images/arrow-down.png) no-repeat 98% 50%;
+}
+
+.style-select .form-control::after {
+    position: absolute;
+    content: '';
+    border: 5px solid transparent;
+    border-top: 5px solid red;
+    right: 0;
+    top: 0;
+    display: inline-block;
+}
+
+.style-textarea {
+    background: transparent;
+    border: 1px solid rgba(112, 104, 129, 0.25);
+    border-radius: 0px;
+    font-size: 18px;
+    color: rgb(97, 90, 112);
+    line-height: 1.2;
+    padding-left: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.btn {
+    border-radius: 24px;
+    min-width: 110px;
+    font-weight: normal;
+    font-size: 15px;
+    
+}
+.btn-primary{
+    background-color: #1e8dd4;
+}
+
+.select-file {
+    position: relative;
+    overflow: hidden;
+    font-size: 15px;
+    height: 32px;
+    line-height: 15px;
+    display: block;
+    width: 112px;
+}
+
+.select-file input {
+    position: absolute;
+    font-size: 50px;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+
+.counter-box {
+    background-color: #e8c350;
+    border-radius: 5px;
+    margin: 15px 0 20px;
+    padding: 15px 24px;
+}
+
+.counter-box.subsid-box {
+    background-color: #ed477f;
+}
+
+.counter-box.pending-box {
+    background-color: #5cb1f5;
+}
+
+.counter-box.time-box {
+    background-color: #9cc56c;
+}
+
+.counter-box p {
+    margin-bottom: 0px;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.counter-box p.count-value {
+    font-size: 28.5px;
+    line-height: 29px;
+}
+
+.title-box {
+    border-bottom: 1px solid #eaeaea;
+    padding: 10px 0;
+}
+
+.title-box h2 {
+    font-size: 20px;
+    color: rgb(0, 44, 91);
+    line-height: 35px;
+    margin: 0px;
+}
+
+.KYC_Form {
+    font-size: 40px;
+    color: rgb(0, 44, 91);
+    line-height: 1.2;
+    -moz-transform: matrix( 0.5, 0, 0, 0.5, 0, 0);
+    -webkit-transform: matrix( 0.5, 0, 0, 0.5, 0, 0);
+    -ms-transform: matrix( 0.5, 0, 0, 0.5, 0, 0);
+    position: absolute;
+    left: 205.676px;
+    top: 161.5px;
+    z-index: 38;
+}
+
+.search-box .icon-pdf {}
+
+.search-input {
+    background: #eeeeee;
+    width: 240px;
+    border-radius: 24px;
+}
+
+.search-input .form-control {
+    background: transparent;
+    border: none;
+}
+
+.search-input .input-group-text {
+    background: transparent;
+    border: none;
+    margin-right: 7px;
+}
+
+@media all and (max-width:768px) {
+    #sidebar {
+        width: -0px;
+    }
+    #content {
+        padding: 0px 0px;
+        margin-left: 0px;
+    }
+    #content.active {
+        margin-left: 260px;
+    }
+    .wrapper {
+        overflow: hidden;
+    }
+    .counter-box {
+        margin: 15px 0 0px;
+    }
+    .view-box {
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:359px) {
+    .search-input {
+        width: 200px;
+    }
+}
+
+.checkbox-button {
+    position: relative;
+}
+
+.checkbox-button input {
+    opacity: 0 !important;
+    cursor: pointer;
+    position: absolute;
+    z-index: 5;
+    height: 20px !important;
+    width: 20px !important;
+    margin-right: 0px !important;
+}
+
+.checkbox-button .checkmark {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    border: 1px solid rgb(0, 44, 91);
+    border-radius: 3px;
+}
+
+.checkbox-button .checkmark::after {
+    top: 0px;
+    left: 2px;
+    width: 19px;
+    height: 9px;
+    border: 1px solid transparent;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    content: '';
+    position: absolute;
+    display: none;
+    transform: rotate(-46deg);
+}
+
+.checkbox-button input:checked~.checkmark {
+    background-color: rgb(0, 44, 91);
+}
+
+.checkbox-button input:checked~.checkmark::after {
+    display: block;
+}
+
+.checkbox-button label {
+    margin-left: 15px;
+    font-size: 11px;
+    line-height: 11px;
+    text-transform: inherit;
+}
+
+/* Radio Button */
+
+.radio-button {
+    position: relative;
+}
+
+.radio-button input {
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    z-index: 5;
+    height: 20px !important;
+    width: 20px;
+}
+
+.radio-button .checkmark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid rgb(0, 44, 91);
+    opacity: 0.3;
+}
+
+.radio-button .checkmark::after {
+    top: 2px;
+    left: 2px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgb(0, 44, 91);
+    content: '';
+    position: absolute;
+    display: none;
+}
+
+.radio-button input:checked~.checkmark {
+    opacity: 1;
+}
+
+.radio-button input:checked~.checkmark:after {
+    display: block;
+}
+
+.radio-button label {
+    padding-left: 15px;
+    font-size: 11px;
+    line-height: 11px;
+    text-transform: inherit;
+    margin-left: 0px;
+}
+
+.radio-button.form-check-inline .checkmark {
+    top: -1px;
+}
+
+.radio-button.form-check-inline label {
+    /* margin-left: 12px; */
+}
+
+@media screen and (max-width:500px) {
+    .counter-box p {
+        margin-bottom: 0px;
+        color: white;
+        font-size: 13px;
+        text-transform: uppercase;
+    }
+    .counter-box p.count-value {
+        font-size: 22.5px;
+        line-height: 29px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .counter-box p {
+        margin-bottom: 0px;
+        color: white;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+    .counter-box p.count-value {
+        font-size: 18px;
+        line-height: 29px;
+    }
+}
+
+
+.upload-box{}
+.upload-box .img-box{
+    margin-bottom: 25px;
+}
+
+.img-box .default-img{
+    background: #f2f2f2;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.img-box .edit-sect{
+    background: rgba(255,255,255,0.5);
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    z-index: 5;
+}
+.edit-sect .btn {
+    min-width: 40px;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+}
+
+
+
+.login-sect{
+    display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 100%;
+  background: #003b5b;
+  
+}
+
+.login-sect .login-inner-box{
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    max-width: 300px;
+    width: 100%;
+    box-shadow: 0 0 12px rgba(0,0,0,0.5);
+}
+
+.login-inner-box .form-signin {
+  }
+  .form-signin .checkbox {
+    font-weight: 400;
+  }
+  .form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .form-signin .form-control:focus {
+    z-index: 2;
+  }
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-bottom: 15px;
+  }
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .btn-header{
+    padding: 0px;
+    min-width: 40px;
+    color: white;
+    font-size: 18px;
+  }
+  .user-img img {
+    width: 30px;
+    border-radius: 50%;
+}
+
+
+@media screen and (max-width:640px){
+    .btn-header{
+        min-width: 30px;
+    }
+    .user-img img {
+        width: 22px;
+        border-radius: 50%;
+    }
+}
